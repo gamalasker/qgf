@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to DIGERATI."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="DIGERATI" />
+<meta name="dc:title" content="Lisez le texte puis r&#x00E9;pondez aux questions:&#x003C;audio controls=&quot;controls&quot;&#x003E;&#x003C;source src=&quot;1.mp3&quot; type=&quot;audio/mp3&quot;/&#x003E;&#x003C;/audio&#x003E;" />
+
+
+
+<title>
+Lisez le texte puis r&#x00E9;pondez aux questions: 
+</title>
+
+<!-- Made with executable version 7.0 Release 0 Build 33 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 0 Build 33 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: Geneva,Arial;
+	background-color: #FFFFFF;
+	color: #0000ff;
+	background-image: url(background.gif); 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+	padding-bottom: 0.5em;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+table,div,span,td{
+	font-size: 1em;
+	color: #0000ff;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial;
+	font-size: 1em;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: #000000;
+}
+
+div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
+	background-color: #DDDDFF;
+	text-align: center;
+	font-size: 1em;
+	color: #0000ff;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #0000ff;
+	margin-bottom: 1px;
+}
+
+div.ReadingContainer, div.ExerciseContainer{
+	min-width: 15em;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 1px;
+}
+
+div#ContainerDiv{
+	margin: -1px;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 1em;
+	color: #0000ff;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 1em;
+	color: #0000ff;
+	text-align: left;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Geneva,Arial;
+	font-size: 120%;
+}
+
+select{
+	font-size: 1em;
+}
+
+div.Feedback {
+	background-color: #FFFFFF;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+
+
+
+.ReadingText{
+	text-align: left;
+}
+
+#ReadingDiv h3.ExerciseSubtitle{
+	color: #0000ff;
+}
+
+
+
+div.ExerciseDiv{
+	color: #0000ff;
+}
+
+/* JMatch standard output table. */
+table.MatchTable{
+	margin: 2em auto; 
+	border-width: 0;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #0000ff;
+	border-color: #0000ff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*width: 90%;*/
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #DDDDFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: #0000ff;
+	box-shadow: 0.2em 0.3em 0.2em #002040;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div.JMixDrag, div.JMatchDrag{
+	padding: 0;
+	background-color: #FFFFFF;
+	border-style: none;
+}
+
+div#GuessDiv{
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0000ff;
+	display: inline-block;
+	padding: 0.5em;
+	border: solid 1pt gray;
+	margin-bottom: 0.5em;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+	left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: Geneva,Arial;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: #0000ff;
+	box-shadow: 0.2em 0.3em 0.2em #0000ff;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Geneva,Arial;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+.Answer{
+	font-size: 120%;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+
+	border-left-color: #eeeeff;
+	border-top-color: #eeeeff;
+	border-right-color: #6e6e7f;
+	border-bottom-color: #6e6e7f;
+	color: #0000ff;
+	background-color: #DDDDFF;
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em #6e6e7f;
+}
+
+.FuncButton:active {
+	box-shadow: none;
+}
+
+.FuncButton:hover{
+	color: #DDDDFF;
+	background-color: #0000ff;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #004080;
+	text-align: center;
+	margin: 0.25rem 0;
+	clear: both;
+	font-size: 1em;
+	padding: 0.2em;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	
+	border-left-color: #7f9fbf;
+	border-top-color: #7f9fbf;
+	border-right-color: #002040;
+	border-bottom-color: #002040; 
+	background-color: #004080;
+	color: #ffffff;
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em #002040;
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	color: #004080;
+	background-color: #ffffff;
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #0000cc;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Geneva,Arial;
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: #0000ff;
+	box-shadow: 0.2em 0.3em 0.2em #0000ff;
+	background-color: #DDDDFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+.auto-style1 {
+	font-family: "GE SS Two Bold";
+}
+.auto-style2 {
+	border-left: 1pt solid #eeeeff;
+	border-right: 1pt solid #6e6e7f;
+	border-top: 1pt solid #eeeeff;
+	border-bottom: 1pt solid #6e6e7f;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	background-color: #DDDDFF;
+	cursor: pointer;
+	box-shadow: 0.2em 0.3em 0.2em #6e6e7f;
+}
+.auto-style3 {
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+	color: #000000;
+	font-weight: bold;
+}
+.auto-style4 {
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #000000;
+}
+.auto-style5 {
+	text-align: left;
+	color: #000000;
+}
+.auto-style6 {
+	color: #000000;
+	font-weight: bold;
+}
+
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Votre score est de:';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions compl&#x00E9;t&#x00E9;es en ce moment: ';
+var ExerciseCompleted = 'Vous avez compl&#x00E9;t&#x00E9; l\'exercice.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'R&#x00E9;ponses exactes au premier essai: ';
+var ShowCorrectFirstTime = false;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'D&#x00E9;sol&#x00E9;! Essayez &#x00E0; nouveau';
+var QsToShow = 20;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Afficher toutes les questions';
+var ShowOneByOneCaption = 'Afficher les questions une &#x00E0; une';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('La famille Davranche d\u00E9jeune ensemble chez eux.','',0,0,1);
+I[0][3][1]=new Array('La famille Davranche se prom\u00E8ne chaque dimanche au bord de la mer.','',1,100,1);
+I[0][3][2]=new Array('La famille Davranche se prom\u00E8ne chaque dimanche dans la ville.','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('en Am\u00E9rique','',1,100,1);
+I[1][3][1]=new Array('\u00C0 Londre','',0,0,1);
+I[1][3][2]=new Array('\u00C0 Paris','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Joseph','',1,100,1);
+I[2][3][1]=new Array('Philippe','',0,0,1);
+I[2][3][2]=new Array('Jules','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Philippe','',1,100,1);
+I[3][3][1]=new Array('Joseph','',0,0,1);
+I[3][3][2]=new Array('Jules','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Joseph','',1,100,1);
+I[4][3][1]=new Array('Jules','',0,0,1);
+I[4][3][2]=new Array('Philippe','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('dure avec son mari','',1,100,1);
+I[5][3][1]=new Array('gentille avec son mari','',0,0,1);
+I[5][3][2]=new Array('douce avec son mari','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('font leurs robes elles-m\u00EAmes.','',1,100,1);
+I[6][3][1]=new Array('ach\u00E8tent leurs robes elles-m\u00EAmes.','',0,0,1);
+I[6][3][2]=new Array('vendent leurs robes elles-m\u00EAmes.','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('car il a d\u00E9pens\u00E9 toute sa part d\'h\u00E9ritage.','',1,100,1);
+I[7][3][1]=new Array('car il veux visiter sa famille.','',0,0,1);
+I[7][3][2]=new Array('Pour faire un voyage touristique.','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('Parce qu\'il a \u00E9crit qu\'il reviendrait une fois fortune faite.','',1,100,1);
+I[8][3][1]=new Array('Parce qu\'il a perdu toute sa fortune .','',0,0,1);
+I[8][3][2]=new Array('Parce qu\'il voudrais leur acheter une nouvelle maison.','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('A l\'occasion du mariage d\'une des deux s\u0153urs.','',1,100,1);
+I[9][3][1]=new Array('A l\'occasion du mariage de Joseph.','',0,0,1);
+I[9][3][2]=new Array('A l\'occasion de l\'anniversaire de deux s\u0153urs','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Le p\u00E8re a cru reconna\u00EEtre son fr\u00E8re Jules.','',1,100,1);
+I[10][3][1]=new Array('Jules est mort.','',0,0,1);
+I[10][3][2]=new Array('Jules va retourner en Am\u00E9rique.','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Jules','',1,100,1);
+I[11][3][1]=new Array('Joseph','',0,0,1);
+I[11][3][2]=new Array('Philippe','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('vingt-huit ans','',1,100,1);
+I[12][3][1]=new Array('vingt-six ans','',0,0,1);
+I[12][3][2]=new Array('vingt-sept ans','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('au Havre','',1,100,1);
+I[13][3][1]=new Array('\u00E0 Paris','',0,0,1);
+I[13][3][2]=new Array('\u00E0 New York','',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('5 personnes','',1,100,1);
+I[14][3][1]=new Array('4 personnes','',0,0,1);
+I[14][3][2]=new Array('6 personnes','',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('chaque dimanche','',1,100,1);
+I[15][3][1]=new Array('chaque samedi','',0,0,1);
+I[15][3][2]=new Array('chaque venredi','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('faix','',1,100,1);
+I[16][3][1]=new Array('vrai','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('oui','',0,0,1);
+I[17][3][1]=new Array('non','',1,100,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('vrai','',1,100,1);
+I[18][3][1]=new Array('faux','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('vrai','',1,100,1);
+I[19][3][1]=new Array('faux','',0,0,1);
+
+
+function StartUp(){
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Lisez le texte puis r&#x00E9;pondez aux questions:<br /><audio controls="controls"><source src="1.mp3" type="audio/mp3"/><br /></audio> <br /></h2>
+
+	<h3 class="ExerciseSubtitle"><span class="auto-style1" lang="ar-eg">استمع 
+	واقرأ ثم أجب عن الاسئلة</span></h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Cliquez sur la bonne r&#x00E9;ponse ou saisissez la bonne r&#x00E9;ponse dans les zones pr&#x00E9;vues &#x00E0; cet effet.</div>
+</div>
+
+
+<div id="ContainerDiv">
+
+
+<div class="ReadingContainer">
+
+	<div id="Reading">
+
+		<div id="ReadingDiv">
+<h3 class="ExerciseSubtitle">Mon oncle Jules</h3><div class="auto-style5"><b>Un vieux pauvre, &#x00E0; barbe blanche, nous demanda l&#x2019;aum&#x00F4;ne. Mon camarade Joseph Davranche lui donna cent sous. Je fus surpris. Il me dit :<br />&#x2014; Ce mis&#x00E9;rable m&#x2019;a rappel&#x00E9; une histoire que je vais te dire et dont le souvenir me poursuit sans cesse. La voici :<br />
+				</b>*<b><br /><br />Ma famille, originaire du Havre, n&#x2019;&#x00E9;tait pas riche. On s&#x2019;en tirait, voil&#x00E0; tout. Le p&#x00E8;re travaillait, rentrait tard du bureau et ne gagnait pas grand-chose. J&#x2019;avais deux s&#x0153;urs.<br />Ma m&#x00E8;re souffrait beaucoup de la g&#x00EA;ne o&#x00F9; nous vivions, et elle trouvait souvent des paroles aigres pour son mari, des reproches voil&#x00E9;s et perfides. Le pauvre homme avait alors un geste qui me navrait. Il se passait la main ouverte sur le front, comme pour essuyer une sueur qui n&#x2019;existait pas, et il ne r&#x00E9;pondait rien. Je sentais sa douleur impuissante. On &#x00E9;conomisait sur tout ; on n&#x2019;acceptait jamais un d&#x00EE;ner, pour n&#x2019;avoir pas &#x00E0; le rendre ; on achetait les provisions au rabais, les fonds de boutique. Mes s&#x0153;urs faisaient leurs robes elles-m&#x00EA;mes et avaient de longues discussions sur le prix d&#x2019;un galon qui valait quinze centimes le m&#x00E8;tre. Notre nourriture ordinaire consistait en soupe grasse et b&#x0153;uf accommod&#x00E9; &#x00E0; toutes les sauces. Cela est sain et r&#x00E9;confortant, para&#x00EE;t-il ; j&#x2019;aurais pr&#x00E9;f&#x00E9;r&#x00E9; autre chose.<br />On me faisait des sc&#x00E8;nes abominables pour les boutons perdus et les pantalons d&#x00E9;chir&#x00E9;s.<br />Mais chaque dimanche nous allions faire notre tour de jet&#x00E9;e en grande tenue. Mon p&#x00E8;re, en redingote, en grand chapeau, en gants, offrait le bras &#x00E0; ma m&#x00E8;re, pavois&#x00E9;e comme un navire un jour de f&#x00EA;te. Mes s&#x0153;urs, pr&#x00EA;tes les premi&#x00E8;res, attendaient le signal du d&#x00E9;part ; mais, au dernier moment, on d&#x00E9;couvrait toujours une tache oubli&#x00E9;e sur la redingote du p&#x00E8;re de famille, et il fallait bien vite l&#x2019;effacer avec un chiffon mouill&#x00E9; de benzine.<br />Mon p&#x00E8;re, gardant son grand chapeau sur la t&#x00EA;te, attendait, en manches de chemise, que l&#x2019;op&#x00E9;ration f&#x00FB;t termin&#x00E9;e, tandis que ma m&#x00E8;re se h&#x00E2;tait, ayant ajust&#x00E9; ses lunettes de myope, et &#x00F4;t&#x00E9; ses gants pour ne les pas g&#x00E2;ter.<br />On se mettait en route avec c&#x00E9;r&#x00E9;monie. Mes s&#x0153;urs marchaient devant, en se donnant le bras. Elles &#x00E9;taient en &#x00E2;ge de mariage, et on en faisait montre en ville. Je me tenais &#x00E0; gauche de ma m&#x00E8;re, dont mon p&#x00E8;re gardait la droite. Et je me rappelle l&#x2019;air pompeux de mes pauvres parents dans ces promenades du dimanche, la rigidit&#x00E9; de leurs traits, la s&#x00E9;v&#x00E9;rit&#x00E9; de leur allure. Ils avan&#x00E7;aient d&#x2019;un pas grave, le corps droit, les jambes raides, comme si une affaire d&#x2019;une importance extr&#x00EA;me e&#x00FB;t d&#x00E9;pendu de leur tenue.<br />Et chaque dimanche, en voyant entrer les grands navires qui revenaient de pays inconnus et lointains, mon p&#x00E8;re pronon&#x00E7;ait invariablement les m&#x00EA;mes paroles :<br />&#x2014; Hein ! si Jules &#x00E9;tait l&#x00E0;-dedans, quelle surprise !<br />Mon oncle Jules, le fr&#x00E8;re de mon p&#x00E8;re, &#x00E9;tait le seul espoir de la famille, apr&#x00E8;s en avoir &#x00E9;t&#x00E9; la terreur. J&#x2019;avais entendu parler de lui depuis mon enfance, et il me semblait que je l&#x2019;aurais reconnu du premier coup, tant sa pens&#x00E9;e m&#x2019;&#x00E9;tait devenue famili&#x00E8;re. Je savais tous les d&#x00E9;tails de son existence jusqu&#x2019;au jour de son d&#x00E9;part pour l&#x2019;Am&#x00E9;rique, bien qu&#x2019;on ne parl&#x00E2;t qu&#x2019;&#x00E0; voix basse de cette p&#x00E9;riode de sa vie.<br />Il avait eu, para&#x00EE;t-il, une mauvaise conduite, c&#x2019;est-&#x00E0;-dire qu&#x2019;il avait mang&#x00E9; quelque argent, ce qui est bien le plus grand des crimes pour les familles pauvres. Chez les riches, un homme qui s&#x2019;amuse fait des b&#x00EA;tises. Il est ce qu&#x2019;on appelle, en souriant, un noceur. Chez les n&#x00E9;cessiteux, un gar&#x00E7;on qui force les parents &#x00E0; &#x00E9;corner le capital devient un mauvais sujet, un gueux, un dr&#x00F4;le !<br />Et cette distinction est juste, bien que le fait soit le m&#x00EA;me, car les cons&#x00E9;quences seules d&#x00E9;terminent la gravit&#x00E9; de l&#x2019;acte.<br />Enfin l&#x2019;oncle Jules avait notablement diminu&#x00E9; l&#x2019;h&#x00E9;ritage sur lequel comptait mon p&#x00E8;re ; apr&#x00E8;s avoir d&#x2019;ailleurs mang&#x00E9; sa part jusqu&#x2019;au dernier sou.<br />On l&#x2019;avait embarqu&#x00E9; pour l&#x2019;Am&#x00E9;rique, comme on faisait alors, sur un navire marchand allant du Havre &#x00E0; New-York.<br />Une fois l&#x00E0;-bas, mon oncle Jules s&#x2019;&#x00E9;tablit marchand de je ne sais quoi, et il &#x00E9;crivit bient&#x00F4;t qu&#x2019;il gagnait un peu d&#x2019;argent et qu&#x2019;il esp&#x00E9;rait pouvoir d&#x00E9;dommager mon p&#x00E8;re du tort qu&#x2019;il lui avait fait. Cette lettre causa dans la famille une &#x00E9;motion profonde. Jules, qui ne valait pas, comme on dit, les quatre fers d&#x2019;un chien, devint tout &#x00E0; coup un honn&#x00EA;te homme, un gar&#x00E7;on de c&#x0153;ur, un vrai Davranche, int&#x00E8;gre comme tous les Davranche.<br />Un capitaine nous apprit en outre qu&#x2019;il avait lou&#x00E9; une grande boutique et qu&#x2019;il faisait un commerce important.<br />Une seconde lettre, deux ans plus tard, disait : &#x00AB; Mon cher Philippe, je t&#x2019;&#x00E9;cris pour que tu ne t&#x2019;inqui&#x00E8;tes pas de ma sant&#x00E9;, qui est bonne. Les affaires aussi vont bien. Je pars demain pour un long voyage dans l&#x2019;Am&#x00E9;rique du Sud. Je serai peut-&#x00EA;tre plusieurs ann&#x00E9;es sans te donner de mes nouvelles. Si je ne t&#x2019;&#x00E9;cris pas, ne sois pas inquiet. Je reviendrai au Havre une fois fortune faite. J&#x2019;esp&#x00E8;re que ce ne sera pas trop long, et nous vivrons heureux ensemble... &#x00BB;<br />Cette lettre &#x00E9;tait devenue l&#x2019;&#x00E9;vangile de la famille. On la lisait &#x00E0; tout propos, on la montrait &#x00E0; tout le monde.<br />Pendant dix ans, en effet, l&#x2019;oncle Jules ne donna plus de nouvelles ; mais l&#x2019;espoir de mon p&#x00E8;re grandissait &#x00E0; mesure que le temps marchait ; et ma m&#x00E8;re aussi disait souvent :<br />&#x2014; Quand ce bon Jules sera l&#x00E0;, notre situation changera. En voil&#x00E0; un qui a su se tirer d&#x2019;affaire !<br />Et chaque dimanche, en regardant venir de l&#x2019;horizon les gros vapeurs noirs vomissant sur le ciel des serpents de fum&#x00E9;e, mon p&#x00E8;re r&#x00E9;p&#x00E9;tait sa phrase &#x00E9;ternelle :<br />&#x2014; Hein ! si Jules &#x00E9;tait l&#x00E0;-dedans, quelle surprise !<br />Et on s&#x2019;attendait presque &#x00E0; le voir agiter un mouchoir, et crier :<br />&#x2014; Oh&#x00E9; ! Philippe.<br />On avait &#x00E9;chafaud&#x00E9; mille projets sur ce retour assur&#x00E9; ; on devait m&#x00EA;me acheter, avec l&#x2019;argent de l&#x2019;oncle, une petite maison de campagne pr&#x00E8;s d&#x2019;Ingouville. Je n&#x2019;affirmerais pas que mon p&#x00E8;re n&#x2019;e&#x00FB;t point entam&#x00E9; d&#x00E9;j&#x00E0; des n&#x00E9;gociations &#x00E0; ce sujet.<br />L&#x2019;a&#x00EE;n&#x00E9;e de mes s&#x0153;urs avait alors vingt-huit ans ; l&#x2019;autre vingt-six. Elles ne se mariaient pas, et c&#x2019;&#x00E9;tait l&#x00E0; un gros chagrin pour tout le monde.<br />Un pr&#x00E9;tendant enfin se pr&#x00E9;senta pour la seconde. Un employ&#x00E9;, pas riche, mais honorable. J&#x2019;ai toujours eu la conviction que la lettre de l&#x2019;oncle Jules, montr&#x00E9;e un soir, avait termin&#x00E9; les h&#x00E9;sitations et emport&#x00E9; la r&#x00E9;solution du jeune homme.<br />On l&#x2019;accepta avec empressement, et il fut d&#x00E9;cid&#x00E9; qu&#x2019;apr&#x00E8;s le mariage toute la famille ferait ensemble un petit voyage &#x00E0; Jersey.<br />Jersey est l&#x2019;id&#x00E9;al du voyage pour les gens pauvres. Ce n&#x2019;est pas loin ; on passe la mer dans un paquebot et on est en terre &#x00E9;trang&#x00E8;re, cet &#x00EE;lot appartenant aux Anglais. Donc, un Fran&#x00E7;ais, avec deux heures de navigation, peut s&#x2019;offrir la vue d&#x2019;un peuple voisin chez lui et &#x00E9;tudier les m&#x0153;urs, d&#x00E9;plorables d&#x2019;ailleurs, de cette &#x00EE;le couverte par le pavillon britannique, comme disent les gens qui parlent avec simplicit&#x00E9;.<br />Ce voyage de Jersey devint notre pr&#x00E9;occupation, notre unique attente, notre r&#x00EA;ve de tous les instants.<br />On partit enfin. Je vois cela comme si c&#x2019;&#x00E9;tait d&#x2019;hier : le vapeur chauffant contre le quai de Granville ; mon p&#x00E8;re, effar&#x00E9;, surveillant l&#x2019;embarquement de nos trois colis ; ma m&#x00E8;re inqui&#x00E8;te ayant pris le bras de ma s&#x0153;ur non mari&#x00E9;e, qui semblait perdue depuis le d&#x00E9;part de l&#x2019;autre, comme un poulet rest&#x00E9; seul de sa couv&#x00E9;e ; et, derri&#x00E8;re nous, les nouveaux &#x00E9;poux qui restaient toujours en arri&#x00E8;re, ce qui me faisait souvent tourner la t&#x00EA;te.<br />Le b&#x00E2;timent siffla. Nous voici mont&#x00E9;s, et le navire, quittant la jet&#x00E9;e, s&#x2019;&#x00E9;loigna sur une mer plate comme une table de marbre vert. Nous regardions les c&#x00F4;tes s&#x2019;enfuir, heureux et fiers comme tous ceux qui voyagent peu.<br />Mon p&#x00E8;re tendait son ventre, sous sa redingote dont on avait, le matin m&#x00EA;me, effac&#x00E9; avec soin toutes les taches, et il r&#x00E9;pandait autour de lui cette odeur de benzine des jours de sortie, qui me faisait reconna&#x00EE;tre les dimanches.<br />Tout &#x00E0; coup, il avisa deux dames &#x00E9;l&#x00E9;gantes &#x00E0; qui deux messieurs offraient des hu&#x00EE;tres. Un vieux matelot d&#x00E9;guenill&#x00E9; ouvrait d&#x2019;un coup de couteau les coquilles et les passait aux messieurs, qui les tendaient ensuite aux dames. Elles mangeaient d&#x2019;une mani&#x00E8;re d&#x00E9;licate, en tenant l&#x2019;&#x00E9;caille sur un mouchoir fin et en avan&#x00E7;ant la bouche pour ne point tacher leurs robes. Puis elles buvaient l&#x2019;eau d&#x2019;un petit mouvement rapide et jetaient la coquille &#x00E0; la mer.<br />Mon p&#x00E8;re, sans doute, fut s&#x00E9;duit par cet acte distingu&#x00E9; de manger des hu&#x00EE;tres sur un navire en marche. Il trouva cela bon genre, raffin&#x00E9;, sup&#x00E9;rieur, et il s&#x2019;approcha de ma m&#x00E8;re et de mes s&#x0153;urs en demandant :<br />&#x2014; Voulez-vous que je vous offre quelques hu&#x00EE;tres ?<br />Ma m&#x00E8;re h&#x00E9;sitait, &#x00E0; cause de la d&#x00E9;pense ; mais mes deux s&#x0153;urs accept&#x00E8;rent tout de suite. Ma m&#x00E8;re dit, d&#x2019;un ton contrari&#x00E9; :<br />&#x2014; J&#x2019;ai peur de me faire mal &#x00E0; l&#x2019;estomac. Offre &#x00E7;a aux enfants seulement, mais pas trop, tu les rendrais malades.<br />Puis, se tournant vers moi, elle ajouta :<br />&#x2014; Quant &#x00E0; Joseph, il n&#x2019;en a pas besoin ; il ne faut point g&#x00E2;ter les gar&#x00E7;ons.<br />Je restai donc &#x00E0; c&#x00F4;t&#x00E9; de ma m&#x00E8;re, trouvant injuste cette distinction. Je suivais de l&#x2019;&#x0153;il mon p&#x00E8;re, qui conduisait pompeusement ses deux filles et son gendre vers le vieux matelot d&#x00E9;guenill&#x00E9;.<br />Les deux dames venaient de partir, et mon p&#x00E8;re indiquait &#x00E0; mes s&#x0153;urs comment il fallait s&#x2019;y prendre pour manger sans laisser couler l&#x2019;eau ; il voulut m&#x00EA;me donner l&#x2019;exemple et il s&#x2019;empara d&#x2019;une hu&#x00EE;tre. En essayant d&#x2019;imiter les dames, il renversa imm&#x00E9;diatement tout le liquide sur sa redingote et j&#x2019;entendis ma m&#x00E8;re murmurer :<br />&#x2014; Il ferait mieux de se tenir tranquille.<br />Mais tout &#x00E0; coup mon p&#x00E8;re me parut inquiet ; il s&#x2019;&#x00E9;loigna de quelques pas, regarda fixement sa famille press&#x00E9;e autour de l&#x2019;&#x00E9;cailleur, et, brusquement, il vint vers nous. Il me sembla fort p&#x00E2;le, avec des yeux singuliers. Il dit, &#x00E0; mi-voix, &#x00E0; ma m&#x00E8;re :<br />&#x2014; C&#x2019;est extraordinaire, comme cet homme qui ouvre les hu&#x00EE;tres ressemble &#x00E0; Jules.<br />Ma m&#x00E8;re, interdite, demanda :<br />&#x2014; Quel Jules ?...<br />Mon p&#x00E8;re reprit :<br />&#x2014; Mais... mon fr&#x00E8;re... Si je ne le savais pas en bonne position, en Am&#x00E9;rique, je croirais que c&#x2019;est lui.<br />Ma m&#x00E8;re effar&#x00E9;e balbutia :<br />&#x2014; Tu es fou ! Du moment que tu sais bien que ce n&#x2019;est pas lui, pourquoi dire ces b&#x00EA;tises-l&#x00E0; ?<br />Mais mon p&#x00E8;re insistait :<br />&#x2014; Va donc le voir, Clarisse ; j&#x2019;aime mieux que tu t&#x2019;en assures toi-m&#x00EA;me, de tes propres yeux.<br />Elle se leva et alla rejoindre ses filles. Moi aussi, je regardais l&#x2019;homme. Il &#x00E9;tait vieux, sale, tout rid&#x00E9;, et ne d&#x00E9;tournait pas le regard de sa besogne.<br />Ma m&#x00E8;re revint. Je m&#x2019;aper&#x00E7;us qu&#x2019;elle tremblait. Elle pronon&#x00E7;a tr&#x00E8;s vite :<br />&#x2014; Je crois que c&#x2019;est lui. Va donc demander des renseignements au capitaine. Surtout sois prudent, pour que ce garnement ne nous retombe pas sur les bras, maintenant !<br />Mon p&#x00E8;re s&#x2019;&#x00E9;loigna, mais je le suivis. Je me sentais &#x00E9;trangement &#x00E9;mu.<br />Le capitaine, un grand monsieur, maigre, &#x00E0; longs favoris, se promenait sur la passerelle d&#x2019;un air important, comme s&#x2019;il e&#x00FB;t command&#x00E9; le courrier des Indes.<br />Mon p&#x00E8;re l&#x2019;aborda avec c&#x00E9;r&#x00E9;monie, en l&#x2019;interrogeant sur son m&#x00E9;tier avec accompagnement de compliments :<br />&#x00AB; Quelle &#x00E9;tait l&#x2019;importance de Jersey ? Ses productions ? Sa population ? Ses m&#x0153;urs ? Ses coutumes ? La nature du sol &#x00BB;, etc., etc.<br />On e&#x00FB;t cru qu&#x2019;il s&#x2019;agissait au moins des &#x00C9;tats-Unis d&#x2019;Am&#x00E9;rique.<br />Puis on parla du b&#x00E2;timent qui nous portait, l&#x2019;Express ; puis on en vint &#x00E0; l&#x2019;&#x00E9;quipage. Mon p&#x00E8;re, enfin, d&#x2019;une voix troubl&#x00E9;e :<br />&#x2014; Vous avez l&#x00E0; un vieil &#x00E9;cailleur d&#x2019;hu&#x00EE;tres qui para&#x00EE;t bien int&#x00E9;ressant. Savez-vous quelques d&#x00E9;tails sur ce bonhomme ?<br />Le capitaine, que cette conversation finissait par irriter, r&#x00E9;pondit s&#x00E8;chement :<br />&#x2014; C&#x2019;est un vieux vagabond fran&#x00E7;ais que j&#x2019;ai trouv&#x00E9; en Am&#x00E9;rique l&#x2019;an dernier, et que j&#x2019;ai rapatri&#x00E9;. Il a, para&#x00EE;t-il, des parents au Havre, mais il ne veut pas retourner pr&#x00E8;s d&#x2019;eux, parce qu&#x2019;il leur doit de l&#x2019;argent. Il s&#x2019;appelle Jules... Jules Darmanche ou Darvanche, quelque chose comme &#x00E7;a, enfin. Il parait qu&#x2019;il a &#x00E9;t&#x00E9; riche un moment l&#x00E0;-bas, mais vous voyez o&#x00F9; il en est r&#x00E9;duit maintenant.<br />Mon p&#x00E8;re, qui devenait livide, articula, la gorge serr&#x00E9;e, les yeux hagards :<br />&#x2014; Ah ! ah ! tr&#x00E8;s bien..., fort bien... Cela ne m&#x2019;&#x00E9;tonne pas... Je vous remercie beaucoup, capitaine.<br />Et il s&#x2019;en alla, tandis que le marin le regardait s&#x2019;&#x00E9;loigner avec stupeur.<br />Il revint aupr&#x00E8;s de ma m&#x00E8;re, tellement d&#x00E9;compos&#x00E9; qu&#x2019;elle lui dit :<br />&#x2014; Assieds-toi ; on va s&#x2019;apercevoir de quelque chose.<br />Il tomba sur le banc en b&#x00E9;gayant :<br />&#x2014; C&#x2019;est lui, c&#x2019;est bien lui !<br />Puis il demanda :<br />&#x2014; Qu&#x2019;allons-nous faire ?...<br />Elle r&#x00E9;pondit vivement :<br />&#x2014; Il faut &#x00E9;loigner les enfants. Puisque Joseph sait tout, il va aller les chercher. Il faut prendre garde surtout que notre gendre ne se doute de rien.<br />Mon p&#x00E8;re paraissait atterr&#x00E9;. Il murmura :<br />&#x2014; Quelle catastrophe !<br />Ma m&#x00E8;re ajouta, devenue tout &#x00E0; coup furieuse :<br />&#x2014; Je me suis toujours dout&#x00E9;e que ce voleur ne ferait rien, et qu&#x2019;il nous retomberait sur le dos ! Comme si on pouvait attendre quelque chose d&#x2019;un Davranche !...<br />Et mon p&#x00E8;re se passa la main sur le front, comme il faisait sous les reproches de sa femme.<br />Elle ajouta :<br />&#x2014; Donne de l&#x2019;argent &#x00E0; Joseph pour qu&#x2019;il aille payer ces hu&#x00EE;tres, &#x00E0; pr&#x00E9;sent. Il ne manquerait plus que d&#x2019;&#x00EA;tre reconnus par ce mendiant. Cela ferait un joli effet sur le navire. Allons-nous-en &#x00E0; l&#x2019;autre bout, et fais en sorte que cet homme n&#x2019;approche pas de nous !<br />Elle se leva, et ils s&#x2019;&#x00E9;loign&#x00E8;rent apr&#x00E8;s m&#x2019;avoir remis une pi&#x00E8;ce de cent sous.<br />Mes s&#x0153;urs, surprises, attendaient leur p&#x00E8;re. J&#x2019;affirmai que maman s&#x2019;&#x00E9;tait trouv&#x00E9;e un peu g&#x00EA;n&#x00E9;e par la mer, et je demandai &#x00E0; l&#x2019;ouvreur d&#x2019;hu&#x00EE;tres :<br />&#x2014; Combien est-ce que nous vous devons, monsieur ?<br />J&#x2019;avais envie de dire : mon oncle.<br />Il r&#x00E9;pondit :<br />&#x2014; Deux francs cinquante.<br />Je tendis mes cent sous et il me rendit la monnaie.<br />Je regardais sa main, une pauvre main de matelot toute pliss&#x00E9;e, et je regardais son visage, un vieux et mis&#x00E9;rable visage, triste, accabl&#x00E9;, en me disant :<br />&#x2014; C&#x2019;est mon oncle, le fr&#x00E8;re de papa, mon oncle !<br />Je lui laissai dix sous de pourboire. Il me remercia :<br />&#x2014; Dieu vous b&#x00E9;nisse, mon jeune monsieur !<br />Avec l&#x2019;accent d&#x2019;un pauvre qui re&#x00E7;oit l&#x2019;aum&#x00F4;ne. Je pensai qu&#x2019;il avait d&#x00FB; mendier, l&#x00E0;-bas !<br />Mes s&#x0153;urs me contemplaient, stup&#x00E9;faites de ma g&#x00E9;n&#x00E9;rosit&#x00E9;.<br />Quand je remis les deux francs &#x00E0; mon p&#x00E8;re, ma m&#x00E8;re, surprise, demanda :<br />&#x2014; Il y en avait pour trois francs ?... Ce n&#x2019;est pas possible.<br />Je d&#x00E9;clarai d&#x2019;une voix ferme :<br />&#x2014; J&#x2019;ai donn&#x00E9; dix sous de pourboire.<br />Ma m&#x00E8;re eut un sursaut et me regarda dans les yeux :<br />&#x2014; Tu es fou ! Donner dix sous &#x00E0; cet homme, &#x00E0; ce gueux !...<br />Elle s&#x2019;arr&#x00EA;ta sous un regard de mon p&#x00E8;re, qui d&#x00E9;signait son gendre.<br />Puis on se tut.<br />Devant nous, &#x00E0; l&#x2019;horizon, une ombre violette semblait sortir de la mer. C&#x2019;&#x00E9;tait Jersey.<br />Lorsqu&#x2019;on approcha des jet&#x00E9;es, un d&#x00E9;sir violent me vint au c&#x0153;ur de voir encore une fois mon oncle Jules, de m&#x2019;approcher, de lui dire quelque chose de consolant, de tendre.<br />Mais, comme personne ne mangeait plus d&#x2019;hu&#x00EE;tres, il avait disparu, descendu sans doute au fond de la cale infecte o&#x00F9; logeait ce mis&#x00E9;rable.<br />Et nous sommes revenus par le bateau de Saint-Malo, pour ne pas le rencontrer. Ma m&#x00E8;re &#x00E9;tait d&#x00E9;vor&#x00E9;e d&#x2019;inqui&#x00E9;tude.<br />Je n&#x2019;ai jamais revu le fr&#x00E8;re de mon p&#x00E8;re !<br />Voil&#x00E0; pourquoi tu me verras quelquefois donner cent sous aux vagabonds.<br /><br />
+				</b></div>
+		</div>
+	</div>
+
+</div>
+
+
+
+<div class="ExerciseContainer">
+
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<b>
+<button id="ShowMethodButton" class="auto-style2" onclick="ShowHideQuestions(); return false;">Afficher toutes les questions</button>
+</b>
+</p>
+
+<div id="OneByOneReadout">
+	<b>
+<button id="PrevQButton" class="auto-style2" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+	</b>
+
+<span id="QNumReadout" class="auto-style4">&#160;</span><b>
+
+<button id="NextQButton" class="auto-style2" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br class="FeedbackText" />
+	</b>
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;">
+<div class="auto-style3">Quelles sont les habitudes de la famille Davranche chaque dimanche ?</div><ol class="MCAnswers"><li id="Q_0_0">
+<b><button class="auto-style2" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;La famille Davranche d&#x00E9;jeune ensemble chez eux.</span></li><li id="Q_0_1">
+<b><button class="auto-style2" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;La famille Davranche se prom&#x00E8;ne chaque dimanche au bord de la mer.</span></li><li id="Q_0_2">
+<b><button class="auto-style2" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;La famille Davranche se prom&#x00E8;ne chaque dimanche dans la ville.</span></li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;">
+<div class="auto-style3">O&#x00F9; l&#x2019;oncle Jules est parti .......</div><ol class="MCAnswers"><li id="Q_1_0">
+<b><button class="auto-style2" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;en Am&#x00E9;rique</span></li><li id="Q_1_1">
+<b><button class="auto-style2" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;&#x00C0; Londre</span></li><li id="Q_1_2">
+<b><button class="auto-style2" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;&#x00C0; Paris</span></li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;">
+<div class="auto-style3">Qui donne de l&#x2019;argent aux pauvres qui demandent l&#x2019;aum&#x00F4;ne ?</div><ol class="MCAnswers"><li id="Q_2_0">
+<b><button class="auto-style2" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Joseph</span></li><li id="Q_2_1"><b>
+<button class="auto-style2" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Philippe</span></li><li id="Q_2_2"><b>
+<button class="auto-style2" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules</span></li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;">
+<div class="auto-style3">............le seul qui travaille dans la famille</div><ol class="MCAnswers"><li id="Q_3_0">
+<b><button class="auto-style2" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Philippe</span></li><li id="Q_3_1"><b>
+<button class="auto-style2" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Joseph</span></li><li id="Q_3_2"><b>
+<button class="auto-style2" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules</span></li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;">
+<div class="auto-style3">........... a piti&#x00E9; de tous les mendiants qui font l&#x2019;aum&#x00F4;ne car cela lui rappelle son oncle.</div><ol class="MCAnswers"><li id="Q_4_0">
+<b><button class="auto-style2" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Joseph</span></li><li id="Q_4_1"><b>
+<button class="auto-style2" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules</span></li><li id="Q_4_2"><b>
+<button class="auto-style2" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Philippe</span></li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;">
+<div class="auto-style3">Clarisse est.....</div><ol class="MCAnswers"><li id="Q_5_0">
+<b><button class="auto-style2" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;dure avec son mari</span></li><li id="Q_5_1">
+<b><button class="auto-style2" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;gentille avec son mari</span></li><li id="Q_5_2">
+<b><button class="auto-style2" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;douce avec son mari</span></li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;">
+<div class="auto-style3">Les 2 s&#x0153;urs ....... </div><ol class="MCAnswers"><li id="Q_6_0">
+<b><button class="auto-style2" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;font leurs robes elles-m&#x00EA;mes.</span></li><li id="Q_6_1">
+<b><button class="auto-style2" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;ach&#x00E8;tent leurs robes elles-m&#x00EA;mes.</span></li><li id="Q_6_2">
+<b><button class="auto-style2" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vendent leurs robes elles-m&#x00EA;mes.</span></li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;">
+<div class="auto-style3">Pourquoi Jules quitte-il la France?</div><ol class="MCAnswers"><li id="Q_7_0">
+<b><button class="auto-style2" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;car il a d&#x00E9;pens&#x00E9; toute sa part d'h&#x00E9;ritage.</span></li><li id="Q_7_1">
+<b><button class="auto-style2" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;car il veux visiter sa famille.</span></li><li id="Q_7_2">
+<b><button class="auto-style2" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Pour faire un voyage touristique.</span></li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;">
+<div class="auto-style3">Pourquoi la famille esp&#x00E8;re-t-elle son retour?</div><ol class="MCAnswers"><li id="Q_8_0">
+<b><button class="auto-style2" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Parce qu'il a &#x00E9;crit qu'il reviendrait une fois fortune faite.</span></li><li id="Q_8_1">
+<b><button class="auto-style2" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Parce qu'il a perdu toute sa fortune .</span></li><li id="Q_8_2">
+<b><button class="auto-style2" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Parce qu'il voudrais leur acheter une nouvelle maison.</span></li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;">
+<div class="auto-style3">A quelle occasion la famille part-elle faire un voyage &#x00E0; Jersey ?</div><ol class="MCAnswers"><li id="Q_9_0">
+<b><button class="auto-style2" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;A l'occasion du mariage d'une des deux s&#x0153;urs.</span></li><li id="Q_9_1">
+<b><button class="auto-style2" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;A l'occasion du mariage de Joseph.</span></li><li id="Q_9_2">
+<b><button class="auto-style2" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;A l'occasion de l'anniversaire de deux s&#x0153;urs</span></li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;">
+<div class="auto-style3">Pourquoi le matelot qui ouvre les hu&#x00EE;tres provoque-t-il l'&#x00E9;moi de la famille ?</div><ol class="MCAnswers"><li id="Q_10_0">
+<b>
+<button class="auto-style2" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Le p&#x00E8;re a cru reconna&#x00EE;tre son fr&#x00E8;re Jules.</span></li><li id="Q_10_1">
+<b>
+<button class="auto-style2" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules est mort.</span></li><li id="Q_10_2">
+<b>
+<button class="auto-style2" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules va retourner en Am&#x00E9;rique.</span></li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;">
+<div class="auto-style3">le capitaine a parl&#x00E9; au p&#x00E8;re de famille de.....</div><ol class="MCAnswers"><li id="Q_11_0">
+<b>
+<button class="auto-style2" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Jules</span></li><li id="Q_11_1"><b>
+<button class="auto-style2" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Joseph</span></li><li id="Q_11_2"><b>
+<button class="auto-style2" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;Philippe</span></li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;">
+<div class="auto-style3">L&#x2019;a&#x00EE;n&#x00E9;e des s&#x0153;urs avait ....</div><ol class="MCAnswers"><li id="Q_12_0">
+<b>
+<button class="auto-style2" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vingt-huit ans</span></li><li id="Q_12_1">
+<b>
+<button class="auto-style2" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vingt-six ans</span></li><li id="Q_12_2">
+<b>
+<button class="auto-style2" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vingt-sept ans</span></li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;">
+<div class="auto-style3">La famille habite...</div><ol class="MCAnswers"><li id="Q_13_0">
+<b>
+<button class="auto-style2" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;au Havre</span></li><li id="Q_13_1">
+<b>
+<button class="auto-style2" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;&#x00E0; Paris</span></li><li id="Q_13_2">
+<b>
+<button class="auto-style2" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;&#x00E0; New York</span></li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;">
+<div class="auto-style3">De quoi se compose cette famille ?</div><ol class="MCAnswers"><li id="Q_14_0">
+<b>
+<button class="auto-style2" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;5 personnes</span></li><li id="Q_14_1">
+<b>
+<button class="auto-style2" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;4 personnes</span></li><li id="Q_14_2">
+<b>
+<button class="auto-style2" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;6 personnes</span></li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;">
+<div class="auto-style3">Quand la famille fait son tour de jet&#x00E9;e en grande tenue?</div><ol class="MCAnswers"><li id="Q_15_0">
+<b>
+<button class="auto-style2" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;chaque dimanche</span></li><li id="Q_15_1">
+<b>
+<button class="auto-style2" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;chaque samedi</span></li><li id="Q_15_2">
+<b>
+<button class="auto-style2" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;chaque venredi</span></li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;">
+<div class="auto-style3">La famille acceptait toujours des invitations pour d&#x00EE;ner ?</div><ol class="MCAnswers"><li id="Q_16_0">
+<b>
+<button class="auto-style2" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;faix</span></li><li id="Q_16_1"><b>
+<button class="auto-style2" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vrai</span></li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;">
+<div class="auto-style3">Le narrateur approuve-t-il l'attitude de ses parents ?</div><ol class="MCAnswers"><li id="Q_17_0">
+<b>
+<button class="auto-style2" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;oui</span></li><li id="Q_17_1"><b>
+<button class="auto-style2" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;non</span></li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;">
+<div class="auto-style3">le narrateur est Joseph Davranche?</div><ol class="MCAnswers"><li id="Q_18_0">
+<b>
+<button class="auto-style2" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vrai</span></li><li id="Q_18_1"><b>
+<button class="auto-style2" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;faux</span></li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;">
+<div class="auto-style3">la famille appartient &#x00E0; une petite bourgeoisie, plut&#x00F4;t pauvre ?</div><ol class="MCAnswers"><li id="Q_19_0">
+<b>
+<button class="auto-style2" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;vrai</span></li><li id="Q_19_1"><b>
+<button class="auto-style2" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+</b><span class="auto-style6">&nbsp;&nbsp;faux</span></li></ol></li></ol>
+
+
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+	<b>
+<button id="FeedbackOKButton" class="auto-style2" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
+	</b>
+</div>
+
+<span class="FeedbackText"><b>
+
+<!-- BeginBottomNavButtons -->
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</b></span>
+
+</body>
+
+</html>
